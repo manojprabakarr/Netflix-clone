@@ -1,0 +1,14 @@
+.navbar{
+    position: fixed;
+    top: 0%;
+    width: 100%;
+    padding: 20px;
+    z-index: 1;
+    transition: ease-in;
+    transition: all 0.5s;
+    background-color: black;
+}
+.navbar >img{
+    object-fit: contain;
+    width: 90px;
+}
