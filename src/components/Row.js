@@ -18,8 +18,8 @@ function Row({title,fetchUrl,isLargeRow }) {
     const [trailerUrl, setTrailerUrl] = useState("");
   
     const options = {
-      height: "390",
-      width: "100%",
+      height: "390px",
+      width: "1000vh",
       
       playerVars: {
         autoplay: 1,
@@ -47,7 +47,7 @@ function Row({title,fetchUrl,isLargeRow }) {
          setTrailerUrl("");
        } else {
          // Search for movie trailer full url
-         movieTrailer(movie?.name || "")
+         movieTrailer(movie?.original_title || "")
            .then((Url) => {
            
             
