@@ -9,7 +9,7 @@ function App() {
   return (
     <div className="App">
         <Nav  />
-        <Banner  />
+        <Banner fetchUrl={requests.fetchTrending} />
         <Row title="Toprated" fetchUrl={requests.fetchTopRated}
           isLargeRow={true}/>
         <Row title="Trending" fetchUrl={requests.fetchTrending}/>
